@@ -3,7 +3,7 @@
 # 9/30/2024
 # Lab 03 
 # Lab Section: 14
-# Sources, people worked with, help given to: None
+# Sources, people worked with, help given to: Shehadi, Google
 # your
 # comments
 # here
@@ -113,8 +113,5 @@ for temp, mintemp in zip(min_temps, max_temps):
 print(min_average)
 print(max_average)
 
-
-
 print(max(max_temps))
 print(min(min_temps))
-
