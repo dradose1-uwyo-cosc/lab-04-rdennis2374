@@ -1,9 +1,9 @@
-# Your Name Here
+# Ryan Dennis
 # UWYO COSC 1010
-# Submission Date
+# 9/30/2024
 # Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
+# Lab Section: 14
+# Sources, people worked with, help given to: None
 # your
 # comments
 # here
@@ -101,5 +101,21 @@ min_temps = [
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+min_sum = 0
+max_sum = 0
+min_average = 0
+max_average = 0
+min_len = len(min_temps)
+max_len = len(max_temps)
+for temp in min_temps:
+    min_sum = temp + min_sum
+    min_average = min_sum / min_len
+print(min_average)
 
+for temp in max_temps:
+    max_sum = temp + max_sum
+    max_average = max_sum / max_len
+print(max_average)
 
+print(max(max_temps))
+print(min(min_temps))
