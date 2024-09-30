@@ -107,15 +107,16 @@ min_average = 0
 max_average = 0
 min_len = len(min_temps)
 max_len = len(max_temps)
-for temp in min_temps:
+for temp, mintemp in zip(min_temps, max_temps):
     min_sum = temp + min_sum
     min_average = min_sum / min_len
-print(min_average)
-
-for temp in max_temps:
-    max_sum = temp + max_sum
+    max_sum = mintemp + max_sum
     max_average = max_sum / max_len
+print(min_average)
 print(max_average)
+
+
 
 print(max(max_temps))
 print(min(min_temps))
+
