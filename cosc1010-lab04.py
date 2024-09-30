@@ -103,8 +103,6 @@ min_temps = [
 # HINT: You can find this information without using any logic or looping.
 min_sum = 0
 max_sum = 0
-min_average = 0
-max_average = 0
 min_len = len(min_temps)
 max_len = len(max_temps)
 for temp, mintemp in zip(min_temps, max_temps):
